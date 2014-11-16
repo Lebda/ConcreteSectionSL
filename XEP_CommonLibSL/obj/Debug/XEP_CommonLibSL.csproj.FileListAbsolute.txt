@@ -1,0 +1,4 @@
+C:\Users\jlebduska\Documents\Visual Studio 2013\Projects\ConcreteSectionSL\XEP_CommonLibSL\Bin\Debug\XEP_CommonLibSL.dll
+C:\Users\jlebduska\Documents\Visual Studio 2013\Projects\ConcreteSectionSL\XEP_CommonLibSL\Bin\Debug\XEP_CommonLibSL.pdb
+C:\Users\jlebduska\Documents\Visual Studio 2013\Projects\ConcreteSectionSL\XEP_CommonLibSL\obj\Debug\XEP_CommonLibSL.dll
+C:\Users\jlebduska\Documents\Visual Studio 2013\Projects\ConcreteSectionSL\XEP_CommonLibSL\obj\Debug\XEP_CommonLibSL.pdb

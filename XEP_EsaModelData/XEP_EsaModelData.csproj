@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90D2677B-FC8A-40D4-84D0-EFF9DFF25AB0}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XEP_EsaModelData</RootNamespace>
+    <AssemblyName>XEP_EsaModelData</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmdData\Impl\XEP_EmdBarData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdFibreData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdFibresData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdGeometryData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdLcsData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdNameValueData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdPointData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdPrincipalData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdShapeData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdStirrupData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdStirrupZoneData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdStirrupZoneShapeData.cs" />
+    <Compile Include="EmdData\Inputs\XEP_BarIO.cs" />
+    <Compile Include="EmdData\Inputs\XEP_IBarIO.cs" />
+    <Compile Include="EmdData\Inputs\XEP_IStirrupZoneIO.cs" />
+    <Compile Include="EmdData\Inputs\XEP_StirrupZoneIO.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdStirrupZoneData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdStirrupData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdStirrupZoneShapeData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdBarData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdStirrupBranchData.cs" />
+    <Compile Include="EmdData\Impl\XEP_EmdStirrupBranchData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdElemConventor.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdFibresData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdGeometryData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdNameValueData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdFibreData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdPrincipalData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdLcsData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdShapeData.cs" />
+    <Compile Include="EmdData\Interface\XEP_IEmdPointData.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_BaseEmdFile.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_CrossSectionEmdFile.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IBaseEmdFile.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IStirrupZonePreparator.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_StirrupZonePreparator.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IStirrupZoneCreationDataFinder.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_StirrupZoneCreationDataFinder.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IReinf4StirrupsProxy.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_Reinf4StirrupsProxy.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IReinf4BarsProxy.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_Reinf4BarsProxy.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IMaterialsEmdFile.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_MaterialsEmdFile.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_IReinforcementEmdFile.cs" />
+    <Compile Include="EmdFiles\Impl\XEP_ReinforcementEmdFile.cs" />
+    <Compile Include="EmdFiles\Interface\XEP_ICrossSectionEmdFile.cs" />
+    <Compile Include="General\Impl\XEP_EmdAttribute.cs" />
+    <Compile Include="General\Impl\XEP_EmdDocument.cs" />
+    <Compile Include="General\Impl\XEP_EmdDom.cs" />
+    <Compile Include="General\Impl\XEP_EmdElement.cs" />
+    <Compile Include="General\Impl\XEP_EmdFileReader.cs" />
+    <Compile Include="General\Impl\XEP_EmdIntendationGetter.cs" />
+    <Compile Include="General\Impl\XEP_EmdLine.cs" />
+    <Compile Include="General\Interface\XEP_IEmdAttribute.cs" />
+    <Compile Include="General\Interface\XEP_IEmdDocument.cs" />
+    <Compile Include="General\Interface\XEP_IEmdDom.cs" />
+    <Compile Include="General\Interface\XEP_IEmdElement.cs" />
+    <Compile Include="General\Interface\XEP_IEmdFileReader.cs" />
+    <Compile Include="General\Interface\XEP_IEmdIntendationGetter.cs" />
+    <Compile Include="General\Interface\XEP_IEmdLine.cs" />
+    <Compile Include="Infrastructure\XEP_EmdFileConstants.cs" />
+    <Compile Include="Infrastructure\XEP_EmdReadWriteFactory.cs" />
+    <Compile Include="Infrastructure\XEP_EmdNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestFiles\CrossSection.emd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XEP_CommonLibSL\XEP_CommonLibSL.csproj">
+      <Project>{9c886438-be26-47e0-85bd-6ac79343175b}</Project>
+      <Name>XEP_CommonLibSL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

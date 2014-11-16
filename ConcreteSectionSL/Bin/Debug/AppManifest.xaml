@@ -1,0 +1,8 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="ConcreteSectionSL" EntryPointType="ConcreteSectionSL.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="ConcreteSectionSL" Source="ConcreteSectionSL.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="XEP_CommonLibSL" Source="XEP_CommonLibSL.dll" />
+    <AssemblyPart x:Name="XEP_EsaModelData" Source="XEP_EsaModelData.dll" />
+  </Deployment.Parts>
+</Deployment>

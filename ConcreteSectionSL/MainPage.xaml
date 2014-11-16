@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="ConcreteSectionSL.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Button Click="Button_Click">Test emd cross section load</Button>
+            <Button Click="Button_Click_1">Save xml</Button>
+            <Button Click="Button_Click_2">Load emd from xml</Button>
+            <Button Click="Button_Click_3">Save emd from xml</Button>
+            <Button Click="TestLoadShapePoints">Test load shape points</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock x:Name="OutPut">
+                
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Button Click="TestLoadBars">TestLoadBars</Button>
+            <TextBox TextChanged="TextBox_TextChanged"></TextBox>
+            <TextBlock x:Name="OutPutReinf">
+
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <Button Click="TestLoadMaterialReinf">TestLoadMaterialReinf</Button>
+            <TextBlock x:Name="OutPutMat">
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>
